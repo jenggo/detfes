@@ -36,5 +36,4 @@ EXPOSE 2804
 
 USER groot
 
-HEALTHCHECK --timeout=3s --interval=30s CMD wget -nv --tries=1 --spider http://localhost:2804/ping || exit 1
 ENTRYPOINT ["./detfes"]
