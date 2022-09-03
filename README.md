@@ -1,7 +1,9 @@
 # DetFes
 
-Simple ReST API ([fiber](https://github.com/gofiber)) to check if image had human face or not (i'm using [go-face](https://github.com/Kagami/go-face))
+Simple ReST API ([fiber](https://github.com/gofiber)) to check if image had human face or not (i'm using [go-face](https://github.com/Kagami/go-face)).
+
 POST to <baseurl>/indentify with multipart/form name: `image` (you can change it via config.yaml)
+
 
 But, first download required data in `models` folder:
 ```
