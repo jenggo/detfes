@@ -7,7 +7,8 @@ ARG APP_NAME=detfes
 
 RUN apk update
 RUN apk add --update upx g++ musl-dev git lapack-dev blas-dev libjpeg-turbo-dev \
-    && apk add dlib --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing
+    && apk add dlib --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing \
+    && wget -O- -nv https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s
 
 WORKDIR /src
 
